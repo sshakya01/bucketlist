@@ -28,7 +28,7 @@ Include images of the following wireframes:
 - All supporting pages
 - The below routes\controllers\models\views table
 
-![Wireframes]{https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_MVP.jpg}
+![Wireframes](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_MVP.jpg)
 
 ## User Stories
 

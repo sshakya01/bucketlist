@@ -28,6 +28,8 @@ Include images of the following wireframes:
 - All supporting pages
 - The below routes\controllers\models\views table
 
+![Wireframes]{https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_MVP.jpg}
+
 ## User Stories
 
 Include user stories regarding how users will interact with the app such as when the page loads how will the user migrate through the page.  

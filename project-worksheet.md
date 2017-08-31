@@ -9,26 +9,26 @@ Use this section to describe your final project and perhaps any links to relevan
 Use this section to include all steps needed to download your project including installing dependencies and seeding your a database.
 
 ## Priority Matrix
-
+![Matrix](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_timepriority_matrix.jpg)
 Include an image of the matirx as well as a full bulleted list of features that have been prioritized based on the `Time and Importance` Matix.  
 
 ## MVP 
 
-Include the full list of features that will be part of your MVP 
+![MVP](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_MVP.jpg)
 
 ## Post-MVP
 
-Include the full list of features that you are considering for Post-MVP
-
+![Post-mvp](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_postMVP.jpg)
 ## Wireframes
+![Wireframe](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_wireframe.jpg)
 
-Include images of the following wireframes:
+images of the following wireframes:
 
 - Landing Page
 - All supporting pages
 - The below routes\controllers\models\views table
 
-![Wireframes](https://github.com/sshakya01/bucketlist/blob/master/MVPwireframe/Project2_MVP.jpg)
+
 
 ## User Stories
 

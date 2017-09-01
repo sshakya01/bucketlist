@@ -1,0 +1,15 @@
+<% include ../partials/boilerplate %>
+
+<form method= 'POST' action='/lists'>
+  <input name='list' type='text' placeholder='List' />
+  <input name='status' type='text' placeholder='Status' />
+        <select name='status_id' type='text'>
+          <option value='1'>DONE</option>
+          <option value='2'>NEED TO DO</option>
+          <option value='3'>IN PROGRESS</option>
+        </select>
+      </label></br>
+  <input type='submit' value='Add it!' />
+</form>
+
+<% include ../partials/footer %>

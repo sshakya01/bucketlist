@@ -29,14 +29,25 @@ module.exports= {
      @param list
      @des- posts new data in lists
      @returns- all lists*/
-     show(data){
+     save(list){
+      console.log(list)
       return db.one(`
         INSERT INTO lists
         (list, status)
         VALUES
         ($/list/, $/status/)
-        `,data);
+        RETURNING *
+        `, list);
      },
-
+/* @func destroy
+   @param {number} id
+   @returns {promise}*/
+   destroy(id){
+    return db.none(`
+      DELETE
+      FROM lists
+      WHERE id = $1
+      `,id);
+  },
 
 }

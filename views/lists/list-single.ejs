@@ -1,0 +1,13 @@
+<% include ../partials/boilerplate %>
+
+<div class='list'>
+  <h1><%= data.list %></h1>
+  <h3><%= data.status %></h3>
+  <a href="/lists/<%= data.id %>/edit"> Edit this list </a>
+  <form action="/lists/<%= data.id %>?_method=Delete" method="Post">
+    <input type="Submit" value="Delete"/>
+  </form>
+  <a href='/lists/'>See all lists</a>
+</div>
+
+<% include ../partials/footer %>

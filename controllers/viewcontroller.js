@@ -13,18 +13,8 @@ module.exports = {
       data: res.locals.list,
     });
   },
-
-  showAddForm(req, res) {
-    res.render('lists/list-add');
-  },
-  showEditForm(req, res) {
-    // console.log(res.locals.list);
-    res.render('lists/list-edit', {
-      data: res.locals.list,
-    });
-  },
   handleCreate(req, res) {
-    res.redirect('/lists');
+    res.redirect('/lists/list-index');
   },
   handleUpdate(req, res) {
     /* need ot update the body so it has an ID */
@@ -33,5 +23,13 @@ module.exports = {
   handleDelete(req, res) {
     res.redirect('/lists');
   },
-
+ showAddForm(req, res) {
+    res.render('lists/list-add');//=======
+  },
+  showEditForm(req, res) {
+    // console.log(res.locals.list);
+    res.render('lists/list-edit', {/////=====
+      data: res.locals.list,
+    });
+  },
 };

@@ -37,8 +37,8 @@ getOne(req, res, next) {
 /*Middleware func:to create list*/
   create(req, res, next) {
     listdb.save(req.body)
-      .then((list) => {
-        res.locals.list = list;
+      .then((lists) => {
+        res.locals.lists = lists;//
         next();
       })
       .catch(err => next(err));
@@ -57,11 +57,6 @@ getOne(req, res, next) {
     listdb.destroy(req.params.id)
       .then(() => next())
       .catch(err => next(err));
-  },
-  showListForm: (req, res) => {
-    res.json({
-      message: 'I’m the HTML form for new quotes. I post to /quotes',
-    });
-  },
+  }
 
 };

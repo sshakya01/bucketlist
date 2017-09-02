@@ -4,7 +4,8 @@
   <% for (let list of data) { %>
     <div class='list'>
       <p><%= list.list %></p>
-      <a href='/lists/<%= list.id%>'>Learn more</a>
+      <p><%= list.status %></p>
+      <a href='/lists/<%= lists.id%>'>Learn more</a>
     </div>
   <% } %>
 

@@ -14,7 +14,7 @@ module.exports = {
     });
   },
   handleCreate(req, res) {
-    res.redirect('/lists/list-index');
+    res.redirect('/lists');
   },
   handleUpdate(req, res) {
     /* need ot update the body so it has an ID */

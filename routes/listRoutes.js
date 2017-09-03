@@ -12,7 +12,9 @@ listRouter.get('/new', viewController.showAddForm);
 
 listRouter.route('/:id')
     .get(listController.getOne, viewController.showOne, viewController.show404)
+    .put(listController.update, viewController.handleUpdate,viewController.show404)
     .delete(listController.destroy, viewController.handleDelete, viewController.show404);
+
 
 listRouter.route('/')
     .get(listController.index, viewController.showLists, viewController.show404)

@@ -39,16 +39,16 @@ module.exports= {
         RETURNING *
         `, lists);
      },
-  //    update(list) {
-  //   return db.one(`
-  //     UPDATE lists
-  //     SET
-  //     list = $/list/,
-  //     status = $/status/
-  //     WHERE id = $/id/
-  //     RETURNING *
-  //   `, list);
-  // },
+     update(list) {
+    return db.one(`
+      UPDATE lists
+      SET
+      list = $/list/,
+      status = $/status/
+      WHERE id = $/id/
+      RETURNING *
+    `, list);
+  },
 /* @func destroy
    @param {number} id
    @returns {promise}*/

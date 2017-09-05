@@ -1,4 +1,4 @@
-\c bucketlist
+
 
 DROP TABLE IF EXISTS lists;
 

@@ -13,8 +13,9 @@ const app = express();
 
 // set up logging
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({extended: false }));
+app.use(bodyParser.urlencoded({extended: false }));// needed for adding
 app.use(bodyParser.json())
+app.use(express.static('public'));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -28,7 +29,7 @@ app.use('/lists', listRouter);
 app.get('/', (req, res) => {
   //res.send('Hello World!');
   res.render('index', {
-    message: 'Your list',
+    message: 'A list of things to do before you die.',
   });
 });
 

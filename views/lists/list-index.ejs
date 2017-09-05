@@ -1,11 +1,14 @@
 <% include ../partials/boilerplate %>
-
+<div id='add'>
   <a href="/lists/new">Add List</a>
+  </div>
   <% for (let list of data) { %>
     <div class='list'>
-      <p><%= list.list %></p>
+    <div id='bucketlist'>
+      <a href='/lists/<%= list.id%>'><%= list.list %></a>
+      </div>
       <p><%= list.status %></p>
-      <a href='/lists/<%= list.id%>'>Learn more</a>
+
     </div>
   <% } %>
 

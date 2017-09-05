@@ -2,8 +2,10 @@
 
 <div class='list'>
   <h1><%= data.list %></h1>
-  <h3><%= data.status %></h3>
-  <a href="/lists/<%= data.id %>/edit"> Edit this list </a>
+  <h1><%= data.status %></h1>
+  <form action="/lists/<%= data.id %>/edit">
+    <input type="Submit" value="Edit"/>
+  </form>
   <form action="/lists/<%= data.id %>?_method=Delete" method="Post">
     <input type="Submit" value="Delete"/>
   </form>

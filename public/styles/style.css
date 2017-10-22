@@ -2,36 +2,56 @@ body {
   font-family: poppins, sans-serif;
   font-size: 16px;
   min-height: 100vh;
-  background-color: #505050;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wooden_pail.svg/918px-Wooden_pail.svg.png);
 }
 
-header {
+#nav {
+  background-color: black;
   background-size: cover;
   background-position: center center;
-  background-color: #999;
+  /*background-image: url(https://www.freewebheaders.com/wordpress/wp-content/gallery/stars/yellow-stars-on-black-background-header.jpg);*/
   background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
 }
 footer {
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-  background-color: #999;
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:black;
+   padding-bottom: 2%;
 }
 a {
+  margin:10px auto;
   float: left;
-  display: block;
+  text-decoration: none;
+  color: steelblue;
+}
+#title {
+  margin:20% auto;
+  text-align: center;
 }
 #add {
+font-size: 15px;
 float: right;
-
-  justify-content: right;
+justify-content: right;
 
 }
 #bucketlist{
   color:green;
+  padding-left: 2%;
 }
-#nav {
+#landing{
+  color:green;
+  margin:25% auto;
+  text-align: center;
+}
+#title{
+  color:red;
+}
+/*#nav {
   display: flex;
   justify-content: center;
   color: white;
@@ -42,8 +62,13 @@ float: right;
   letter-spacing: 1px;
   transition: 0.5s;
   background-color: #BE9063;
+}*/
+/*joe's hint*/
+ul{
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
 }
-
 h3 {
   text-align: center;
   line-height: 1.5em;
@@ -54,7 +79,8 @@ h3 {
 p {
   font-size: 16px;
   line-height: 1.4em;
-  padding-left: 30%;
+  padding-left: 50%;
+  padding-top: 1%;
   color: white;
 }
 

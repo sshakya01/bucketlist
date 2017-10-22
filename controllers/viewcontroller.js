@@ -24,11 +24,11 @@ module.exports = {
     res.redirect('/lists');
   },
  showAddForm(req, res) {
-    res.render('lists/list-add');//=======
+    res.render('lists/list-add');
   },
   showEditForm(req, res) {
     // console.log(res.locals.list);
-    res.render('lists/list-edit', {/////=====
+    res.render('lists/list-edit', {
       data: res.locals.list,
     });
   },
